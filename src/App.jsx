@@ -1,8 +1,10 @@
-import './App.css'
-import Compendium from './views/Compendium/Compendium'
+import './App.css';
+import Compendium from './views/Compendium/Compendium';
 
 function App() {
-  return <Compendium />
+  return (<Compendium />
+
+  );
 }
 
-export default App
+export default App;

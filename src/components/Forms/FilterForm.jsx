@@ -1,4 +1,4 @@
-export default function FilterForm({types, filterChange, selectedType}) {
+export default function FilterForm({ types, filterChange, selectedType }) {
   return (
     <div>
       <h3>Filter Pokemon!</h3>
@@ -7,8 +7,8 @@ export default function FilterForm({types, filterChange, selectedType}) {
         onChange={(event) => filterChange(event.target.value)}
       >
         <option value='all'>All</option>
-        {types.map(({type}) => (
-          <option value={type}>{type}</option>
+        {types.map(({ type }) => (
+          <option value={type} key={type}>{type}</option>
         ))}
       </select>
     </div>
